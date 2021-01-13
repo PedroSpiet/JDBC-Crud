@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.util.Scanner;
 
 import db.DB;
+import domain.CreateUser;
 import domain.FindUser;
 
 public class Program {
@@ -21,6 +22,11 @@ public class Program {
 			switch (opt) {
 				case 1:
 					FindUser.handle();
+				break;
+				
+				case 2: 
+					String name = sc.next();
+					CreateUser.handle(name);
 				break;
 			}
 
