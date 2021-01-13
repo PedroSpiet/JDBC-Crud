@@ -5,6 +5,7 @@ import java.util.Scanner;
 import domain.CreateUser;
 import domain.FindOneUser;
 import domain.FindUser;
+import domain.RemoveUser;
 
 public class Program {
 
@@ -31,6 +32,11 @@ public class Program {
 				case 3: 
 					int id = sc.nextInt();
 					FindOneUser.handle(id);
+				break;
+				
+				case 4: 
+					int idRemove = sc.nextInt();
+					RemoveUser.handle(idRemove);
 				break;
 			}
 
